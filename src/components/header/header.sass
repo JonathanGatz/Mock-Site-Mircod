@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+header
+  .header__container
+    display: flex
+    max-width: 1140px
+    margin: 0 auto
+    padding: 45px 0
+
+    & .container__item-logo
+      margin-right: 765px
+      display: flex
+
+      & img
+        margin-right: 10px
+
+      & span
+        text-transform: uppercase
+        display: block
+        font-family: 'Lato', sans-serif
+        font-size: 12pt
+        position: relative
+        top: 7px
+        color: #6d6d6d
+
+
+
+
+    & .container__item-sign-in
+
+      & a
+        font-family: 'Lato', sans-serif
+        color: #f25324
+        font-size: 16pt
+        
+
+  & .header__submenu
+    background: #2A2A2B
+
+
+    
+
+    & .submenu__container
+      margin: 0 auto
+      display: flex
+      padding: 28px 0
+      max-width: 965px
+
+      & a
+        font-size: 11pt
+        font-family: "Proxima Nova Rg", sans-serif
+        text-transform: uppercase
+        color: white
+        margin-right: 65px
+
+      & a:nth-last-child(1)
+        margin-right: 134px
+
+
+
+
+      & .active
+        padding: 8px 24px
+        border-radius: 8px
+        margin-right: 48px
+        border: 1px solid white
+
+      & svg
+        color: #f25324
+        max-width: 16px
+        width: 16px
+        max-height: 16px
+        height: 16px
+
+      & .container__like-search
+        position: relative
+        top: 3px
+
+        & span
+          border-right: 1px solid #f25324
+          margin-right: 8px
+          padding-right: 8px
+
+        & span:nth-last-child(1)
+          border: none
+          margin-right: 0
+          padding-right: 0
+
+  & .header__page-name
+    background: url("../../img/schema.png") center rgba(0,0,0,.7) fixed
+    background-size: cover
+    background-blend-mode: color
+    display: flex
+    justify-content: center
+    padding: 15.5px 0
+
+    & span
+      color: white
+      font-size: 50pt
+      font-weight: 100
+      padding: 0 32px
+      font-family: 'Proxima Nova Th'
+
+    & p
+      position: relative
+      top: 23px
+      margin-bottom: 0
+      font-size: 32pt
+      color: white
+      text-transform: uppercase
+      font-family: "Proxima Nova Bold", sans-serif
+
+      & span
+        font-family: "Proxima Nova Bold", sans-serif
+        font-size: 32pt
+        color: #f25324
+        padding: 0
+
+@media screen and (max-width: 1300px)
+  header
+    & .header__container
+      max-width: 950px
+
+      & .container__item-logo
+        margin-right: 655px
+
+    & .header__submenu
+
+      & .submenu__container
+        max-width: 950px
+
+        & a
+          margin-right: 72px
+
+    & .header__page-name
+
+      & p
+        font-size: 26pt
+        top: 30px
+
+        & span
+          font-size: 26pt

@@ -1,0 +1,84 @@
+footer
+  background: #2A2A2B
+
+.container__content-footer
+  display: flex
+  max-width: 1088px
+  margin: 0 auto
+  padding-bottom: 75px
+  & .container__col:last-child
+    margin-right: 0
+  & .container__col:nth-child(2)
+    margin-right: 320px
+  & .container__col
+    max-width: 300px
+    padding-top: 150px
+    margin-right: 56px
+    & span
+      display: block
+      text-transform: uppercase
+      font-size: 18pt
+      color: white
+      margin-bottom: 42px
+      font-family: "Proxima Nova Bold", sans-serif
+    & p, li
+      font-size: 14pt
+      color: #668181
+      font-family: "Proxima Nova Rg", sans-serif
+    & ul
+      padding-left: 16px
+    & .col__payments
+      display: flex
+      & img:last-child
+        margin-right: 0
+      & img
+        margin-right: 8px
+
+
+.container__bottom
+  border-top: 1px solid #546E7A
+  padding-top: 28px
+  padding-bottom: 16px
+  & span, a
+    font-family: "Proxima Nova Rg", sans-serif
+    color: #668181
+    display: block
+    font-size: 12px
+  & span
+    margin-right: 300px
+  & a
+    margin-right: 16px
+  & a:last-child
+    margin-right: 0
+  & a:nth-of-type(4)
+    margin-right: 420px
+.bottom__content
+  display: flex
+  position: relative
+  max-width: 1170px
+  margin: 0 auto
+  & button
+    background: #F14921
+    position: absolute
+    right: 0
+    top: -40px
+    & img
+      position: relative
+      top: -2px
+      transform: rotate(-90deg)
+
+@media screen and (max-width: 1300px)
+  .container__content-footer
+    max-width: 830px
+    & .container__col:nth-child(2)
+      margin-right: 100px
+
+  .container__bottom
+    & span
+      margin-right: 200px !important
+    & a,span
+      font-size: 11px
+  .bottom__content
+    max-width: 900px !important
+  .container__bottom a:nth-of-type(4)
+    margin-right: 315px !important
