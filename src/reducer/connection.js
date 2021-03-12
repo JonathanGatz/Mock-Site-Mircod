@@ -1,6 +1,6 @@
 
 
-// Then, this file controles state and guids where that form 
+
 // Note: each change within these files are pushed out of the reducer as someting brand new. It does not manipulate the data recieved. Rather makes a copy of old changes along wiith the new change. 
 
 const connection = (state, action) => {

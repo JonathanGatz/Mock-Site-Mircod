@@ -1,6 +1,6 @@
 
 
-// Using this connections file to dispatch each specific instanses (state) we want to export in the ruducers file. 
+
 // Note: each change within these files are pushed out of the reducer as someting brand new. It does not manipulate the data recieved. Rather makes a copy of old changes along wiith the new change.
 
 const options = (state, action) => {

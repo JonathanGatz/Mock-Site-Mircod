@@ -92,6 +92,7 @@ const ConstructorPage = (props) => {
                                 /// If the click amounts to true, we hold the state in chosen
                                 /// If it's not true (: "unchosen"), than we store data the unchosen state  
                                 /// Altimately holding stste one way or the other  
+
                                 <div className="about">
                                     <div className="content__choose-options">
                                         <p>Choosen<span>
@@ -387,6 +388,7 @@ const ConstructorPage = (props) => {
 
 /// The goal was to just create another modal for "ORDER NOW"
 /// This is just a simple form 
+
 const OrderNow = () => {
     const {options} = Select
     return (

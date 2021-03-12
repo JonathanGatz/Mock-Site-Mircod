@@ -11,6 +11,11 @@ import google from "../../img/google.svg"
 import toTop from "../../img/to-top.svg"
 import {Link} from "react-router-dom";
 
+
+
+// linking everything to '/' for now  
+
+
 const Footer = () => {
     return (
         <footer>
@@ -26,6 +31,8 @@ const Footer = () => {
                             non numquam eius.
                         </p>
                     </div>
+
+
                     <div className="container__col">
                         <span>Categories</span>
                         <ul>
@@ -35,6 +42,8 @@ const Footer = () => {
                             <li>Toys & Kids</li>
                         </ul>
                     </div>
+
+
                     <div className="container__col">
                         <span>ACCEPT PAYMENTS</span>
                         <div className="col__payments">
@@ -46,18 +55,18 @@ const Footer = () => {
                 </div>
                 <div className="container__bottom">
                     <div className="bottom__content">
-                        <span>© 2016 - Mircod. All Rights Reserved.</span>
+                        <span>© 2020 - Mircod. All Rights Reserved.</span>
                         <Link to='./'>
-                            <img src={twitter} alt='' width='13' height='13'/>
+                            <img src={twitter} alt='' width='16' height='16'/>
                         </Link>
                         <Link to='./'>
-                            <img src={facebook} alt='' width='13' height='13'/>
+                            <img src={facebook} alt='' width='16' height='16'/>
                         </Link>
                         <Link to='./'>
-                            <img src={youtubeLogo} alt='' width='13' height='13'/>
+                            <img src={youtubeLogo} alt='' width='16' height='16'/>
                         </Link>
                         <Link to='./'>
-                            <img src={google} alt='' width='13' height='13'/>
+                            <img src={google} alt='' width='16' height='16'/>
                         </Link>
                         <Link to='./'>
                             Blog

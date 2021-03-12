@@ -93,25 +93,25 @@ const Carousel = (props) => {
                     <button onClick={props.chosenumber7} className="option__img">
                         {seventh_choice === true ? <img alt='' src={active}/> : <img alt='' src={sun}/>}
                     </button>
-                    <span>Temperature</span>
+                    <span>Temperature 1</span>
                 </div>
                 <div className={`option ${eighth_choice === true ? "active" : ""}`}>
                     <button onClick={props.chosenumber8} className="option__img">
                         {eighth_choice === true ? <img alt='' src={active}/> : <img alt='' src={sun}/>}
                     </button>
-                    <span>Temperature</span>
+                    <span>Temperature 2</span>
                 </div>
                 <div className={`option ${ninth_choice === true ? "active" : ""}`}>
                     <button onClick={props.chosenumber9} className="option__img">
                         {ninth_choice === true ? <img alt='' src={active}/> : <img alt='' src={sun}/>}
                     </button>
-                    <span>Temperature</span>
+                    <span>Temperature 3</span>
                 </div>
                 <div className={`option ${tenth_choice === true ? "active" : ""}`}>
                     <button onClick={props.chosenumber10} className="option__img">
                         {tenth_choice === true ? <img alt='' src={active}/> : <img alt='' src={sun}/>}
                     </button>
-                    <span>Temperature</span>
+                    <span>New Temp</span>
                 </div>
                 <div className="option add-custom">
                     <button onClick={() => {
@@ -128,14 +128,17 @@ const Carousel = (props) => {
                     <button onClick={props.chosenumber11} className="option__img">
                         {eleventh_choice === true ? <img alt='' src={active}/> : <img alt='' src={sun}/>}
                     </button>
-                    <span>Temperature</span>
+                    <span>Temperature 4</span>
                 </div>
             </Slider>
         </div>
     )
 }
 
-/// Adding options, made multi-sample
+/// Note: Having index eual 1 cancels out the [0] index  This allows us to have an accurate array count on the from end (i.e 12345 instead 01234)
+
+
+
 const AddOption = () => {
     const {Option} = Select
     const children = [];
@@ -161,7 +164,12 @@ const AddOption = () => {
     )
 }
 
-/// Custom arrows for carousel, arrow next
+
+/// This is why I Love React. We can store props and easily call-back when needed. 
+/// Simply utilizing the arrow scrole function. 
+
+
+
 const SampleNextArrow = (props) => {
     const {className, style, onClick} = props;
     return (
@@ -173,7 +181,10 @@ const SampleNextArrow = (props) => {
     );
 }
 
-/// Custom arrows for carousel, back arrow
+/// This is why I Love React. We can store props and easily call-back when needed. 
+/// Simply utilizing the arrow scrole function. 
+
+
 const SamplePrevArrow = (props) => {
     const {className, style, onClick} = props;
     return (
