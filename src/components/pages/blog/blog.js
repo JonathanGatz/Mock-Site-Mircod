@@ -3,7 +3,9 @@ import React from 'react';
 
 
 export default function Blog() {
-  
-  return <h1 className='blog'>Blog Page</h1>;
-  
+  return (
+    <div className="main__container">
+  <h1 className='blog'>Blog Page</h1>
+  </div>
+  )
 }
