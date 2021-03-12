@@ -95,9 +95,7 @@ const ConstructorPage = (props) => {
 
                                 <div className="about">
                                     <div className="content__choose-options">
-                                        <p>Choosen<span>
-                                            Options:
-                                            </span></p>
+                                        <p>Choosen<span> Options:</span></p>
                                             
                                         <div className={`option ${first_choice === true ? "choosen" : "unchoosen"}`}>
                                             <div className="option__img">
