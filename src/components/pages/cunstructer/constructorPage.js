@@ -4,7 +4,7 @@ import DistanceTracker from "../../range/range";
 
 import './constructor.sass'
 import Fade from 'react-reveal/Fade';
-import {Input, Select} from "antd";
+import {Input,} from "antd";
 import {openModal} from "../../actions/modal";
 import {
     connectionSelected1,
@@ -28,7 +28,6 @@ import complete from "../../../img/complete.svg"
 import connection from "../../../img/connection.svg"
 import send from "../../../img/telegram.svg"
 import {Link} from "react-router-dom";
-import choises from '../../../reducer/choises';
 
 
 
@@ -388,7 +387,7 @@ const ConstructorPage = (props) => {
 /// This is just a simple form 
 
 const OrderNow = () => {
-    const {options} = Select
+    
     return (
         <form className="modal-form">
             <Input className="form__item" placeholder="Name" allowClear/>
