@@ -34,7 +34,7 @@ const Header = () => {
             </div>
             <div className="header__page-name">
                 <span>[</span>
-                <p>Chip <span className=''>Constructor</span></p>
+                <p>Chips <span className=''>Constructor</span></p>
                 <span>]</span>
             </div>
         </header>
